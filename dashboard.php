@@ -20,7 +20,7 @@
                     <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="Make_Appointment.php" style="color: aliceblue;" class="d-flex justify-content-center my-4">Make Appointment</a></h6>
                 </div>
                 <div class="bg-success d-flex justify-content-center" style="height: 175px;">
-                    <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="Make_Appointment.php" style="color:black;"class="d-flex justify-content-center my-4 " method="post" name="vappointment">View Appointment</a></h6>
+                    <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="View_Appointment.php" style="color:black;"class="d-flex justify-content-center my-4 " method="post" name="vappointment">View Appointment</a></h6>
                 </div>
       </div>
     </div>
@@ -31,6 +31,31 @@
       <div class="card-body bg-secondary mb-2 my-2  " >
        <h5 class="card-title d-flex justify-content-center" style="color:aqua">User Informations</h5>
        <img class="card-img-bottom" src="C:\xampp\htdocs\php-mini-project\icon.png" alt="">
+       <?php
+        // Start the session to access the logged-in user's information
+        session_start();
+
+        // Check if the user is logged in
+        if (isset($_SESSION['user_id'])) {
+            // Retrieve user information from the database
+            // assuming $db is your database connection object
+            $userId = $_SESSION['user_id']; // Assuming 'user_id' is the key storing the user ID in the session
+            $query = "SELECT email, profile_picture FROM users WHERE id = ?";
+            $stmt = $db->prepare($query);
+            $stmt->bind_param("i", $userId);
+            $stmt->execute();
+            $stmt->bind_result($email, $profilePicture);
+            $stmt->fetch();
+            $stmt->close();
+
+            // Display user information in the HTML template
+            echo "<h1>Welcome, $email!</h1>";
+            echo "<p>Email: $email</p>";
+            echo "<img src='path/to/profile_pictures/$profilePicture' alt='Profile Picture'>";
+        } else {
+            echo "<h1>Please log in to view user information.</h1>";
+        }
+    ?>
        <?php 
 // include('connection.php');
 
@@ -48,6 +73,8 @@
 //    echo "$view->Message";
     
 //   }
+
+
 ?>
       
       </div>

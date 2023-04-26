@@ -19,7 +19,7 @@
                     <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="Make_Appointment.php" style="color: aliceblue;" class="d-flex justify-content-center my-4">Make Appointment</a></h6>
                 </div>
                 <div class="bg-success d-flex justify-content-center" style="height: 240px;">
-                    <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="Make_Appointment.php" style="color:black;"class="d-flex justify-content-center my-4 " method="post" name="vappointment">View Appointment</a></h6>
+                    <h6 class="card-subtitle mb-2 text-muted py-5 my-4"><a href="View_Appointment.php" style="color:black;"class="d-flex justify-content-center my-4 " method="post" name="vappointment">View Appointment</a></h6>
                 </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
               </select>
           </div>
           
-          <div class="mb-3 form-control">
+          <div class="mb-3 form-control" name="proname">
             <select name="profeesionalname" id="pr">
             <option id="pro">Select profesional's Name</option>
             <?php

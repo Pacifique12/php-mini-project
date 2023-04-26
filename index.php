@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,4 +76,5 @@
 </body>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </html>

@@ -18,7 +18,7 @@
                 <!-- Nav tabs -->
                 <ul class="nav gap-3 d-flex justify-content-center" id="navId" role="tablist">
                     <li class="nav-item">
-                        <a href="#tab1Id" class="btn btn-primary"  aria-current="page">Login </a>
+                        <a href="index.php" class="btn btn-primary" name="login">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Register</a>

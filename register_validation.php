@@ -1,5 +1,4 @@
 <?php
-
 include'connection.php';
 $fname= $_POST['fname'];
 $lname= $_POST['lname'];
@@ -16,13 +15,15 @@ if ($passw==$comfirm) {
     VALUES ('$fname','$lname','$country','$city','$email','$phone','$passw','$profeesional')";
     $result=mysqli_query($conn,$sql);
     if ($result) {
-        echo"inserted";
+        echo"<script>alert('Your Account is Successfuly Created Do You Want To Login?');
+         window.location.replace('index.php');</script>";
     } else {
         echo"no data inserted";
     }
+    // header('location:index.php');
     
 } else {
-   echo"password mismatch  <a href='pr_register.php'>back to register</a>";
+   echo"password mismatch <script>alert('Password Mismatch'); window.location.replace('pr_register.php');</script> ";
 }
 
 
