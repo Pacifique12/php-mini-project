@@ -4,13 +4,24 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .pp{
+            background-image:url(p.jpg); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+        
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <title>online appointment</title>
+    
 </head>
-<body>
+<body class="pp" style="width: 100%;">
     <div class="row my-1">
         <div class="col-sm-6"></div>
         <div class="col-sm-6">
@@ -52,10 +63,10 @@ session_start();
             </div>
         </div>
     </div>
-    <div class="row d-flex justify-content-center my-5">
-        <div class="card col-sm-8 my-5 bg bg-primary">
+    <div class="row d-flex justify-content-center my-5   rounded p-3">
+        <div class="card col-sm-4 my-5 bg-secondary">
             <div class="card-body">
-                <h4 class="card-title d-flex justify-content-center">LOGIN to online Appointment</h4>
+                <h6 class="card-title d-flex justify-content-center" class="card-title d-flex justify-content-center" style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(207, 224, 230);"><b>LOGIN To Online Appointment Platform</b></h6>
                 <form action="login_validation.php" method="post">
                     <div class="mb-3">
                       <label for="" class="form-label"></label>
@@ -66,7 +77,7 @@ session_start();
                       <input type="password" name="password" id="" class="form-control" placeholder="Enter your password" aria-describedby="helpId">
                     </div >
                     <div class="mb-3">
-                        <input class="" type="submit" value="Login">
+                        <button class="" type="submit" name="login" value="Login" style="background-color:rgb(11, 138, 180);border-radius: 1ch;"><h4><b>Login</b></h4></button>
                       </div>
                    
                 </form>

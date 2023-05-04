@@ -14,7 +14,7 @@
     
     </div>
   </div>
- 
+  </div>
   <div class="row">
     <div class=" p-3" style="margin-top: -5vh;" >
 
@@ -36,40 +36,20 @@
         
         <a href="#tab1Id" class="btn btn-primary" style="font-family: Georgia, 'Times New Roman', Times, serif;" aria-current="page" >Update Appointment</a>
         <a href="index.php" class="btn btn-primary"  aria-current="page" style="font-family: Georgia, 'Times New Roman', Times, serif;">Log out </a>
-    </div>
-    </div>
-  </div>
-  <center><h1 style="color: blue; font-family: Georgia, 'Times New Roman', Times, serif;">Welcome To Online Appointment Platform</h4></center>
-     <div class="row">
-      <div class="col-sm-2">
-        <h4 style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;">On this Platform You can Send A request For Doctor, Driver, Lowyer and Lecturer Appointment</h1>
+        
+        
         
       </div>
-      <div class="col-sm-4">
-        <div class="bg-danger rounded-pill" style="padding: 60px;">
-         <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;">Click Here To View Appointments</p> <a class="nav-link active" href="View_Appointment.php" style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;"><b>View Appointment</b> </a>
-        </div>
-        <div class="bg-primary mt-5 rounded-pill" style="padding: 60px;">
-          <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;">Click Here To Make Appointments</p> <a class="nav-link active" href="Make_Appointment.php"  style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;"><b>Make Appointment</b> </a>
-         </div>
-      </div>
-      <div class="col-sm-6">
-        <div> 
-          <center><h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;">User Imformations</h1></center>
-        </div>
-        <div>
-          <center><img class="rounded-pill" src="pic.jpg" alt="" width="100px" height="100px"></center>
-        </div>
-        <div>
-          <?php 
-          $connects=mysqli_connect('localhost','root','','appointment_system')
-          
-          ?>
-        </div>
-      </div>
-     </div> 
+    </div>
+  </div>
+  <center><h1 style="color: blue; font-family: Georgia, 'Times New Roman', Times, serif;">Make Your Appointmrent Here</h1></center>
+    <div class="card col-sm-9 d-flex justify-content-center mt-4" style="margin-left:150px ;">
+      
+      
+    </div>
   
-  
+  </div>
+  </div>
 </body>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>

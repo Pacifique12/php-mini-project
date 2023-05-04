@@ -8,6 +8,7 @@ $result=mysqli_query($conn,$sql);
 $view=mysqli_fetch_object($result);
 $chekname=$view->email;
 $chekpass=$view->password;
+
 if ($chekname==$username && $chekpass==$password) {
     header('location:dashboard.php');
 } else {
@@ -17,3 +18,6 @@ if ($chekname==$username && $chekpass==$password) {
 
 
 ?>
+
+
+

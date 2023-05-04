@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <title>online appointment</title>
 </head>
-<body>
-    <div class="row my-1">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6 ">
-                <!-- Nav tabs -->
-                <ul class="nav gap-3 d-flex justify-content-center" id="navId" role="tablist">
-                    <li class="nav-item">
-                        <a href="index.php" class="btn btn-primary"  aria-current="page">Login </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">Register</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="cl_register.php">Register as client</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="pr_register.php">Register as profeesional</a>
-                        </div>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </div>
+<body class="bg-info">
+  <div class="row">
+    <div class=" p-3" >
+
+      <div class="" >
+      <nav class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="dashboard.php" style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;"><b>Dashboard</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Make_Appointment.php" tabindex="-1" aria-disabled="true" style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;"><b>Make Appointment</b> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="View_Appointment.php" tabindex="-1" aria-disabled="true" style="font-family: Georgia, 'Times New Roman', Times, serif; color: aliceblue;"><b>View Appointment</b> </a>
+        </li>
+      </nav>
     </div>
+    <div>
+      <ul class="nav gap-3 " style="margin-left: 970px; margin-top: -40px; ">
+        
+        <a href="#tab1Id" class="btn btn-primary" style="font-family: Georgia, 'Times New Roman', Times, serif;" aria-current="page" >Update Appointment</a>
+        <a href="index.php" class="btn btn-primary"  aria-current="page" style="font-family: Georgia, 'Times New Roman', Times, serif;">Log out </a>
+    </div>
+    </div>
+  </div>
+  <center><h1 style="color: blue; font-family: Georgia, 'Times New Roman', Times, serif;">Welcome To Online Appointment Platform</h4></center>
+   
     <div class="row d-flex justify-content-center my-5">
         <div class="card col-sm-8 my-5">
             <div class="card-body">
@@ -63,9 +64,11 @@
                         <input type="tel" name="phone"  class="form-control" placeholder="Enter your phone number" required>
                       </div>
                     <div class="mb-3 form-control">
-                      <option >Select profesional</option>
+                      <option >Register As</option>
                         <select name="profeesional" id="pr" required>
                                                  
+                          <option disabled selected value style="display:none"></option>
+                            <option value="Client" id="pr">Client</option>
                             <option value="doctor" id="pr">Doctor</option>
                             <option value="lecturer" id="pr">Lecturer</option>
                             <option value="lawyer" id="pr">Lawyer</option>
